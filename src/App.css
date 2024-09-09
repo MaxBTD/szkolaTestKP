@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+@keyframes wooweewoowee{
+  0% {width: 500px; transform: rotate(0deg);}
+  50% {width: 1000px; transform: rotate(180deg);}
+  90% {width: 450px;}
+  100% {width:500px; transform: rotate(360deg);}
+}
+
+@keyframes imiePowieksz{
+  0% {transform: scale(1);}
+  50% {transform: scale(1.25);}
+  95% {transform: scale(0.9);}
+  100% {transform: scale(1);}
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -9,7 +23,11 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: wooweewoowee infinite 0.75s linear;
+  }
+
+  #imie{
+    animation: imiePowieksz infinite 2.5s linear;
   }
 }
 
@@ -35,4 +53,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#imie{
+  font-weight: bold;
+  font-size:75px;
 }
